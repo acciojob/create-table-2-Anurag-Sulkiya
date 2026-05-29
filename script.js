@@ -15,7 +15,7 @@ function createTable() {
 
 	const table = document.getElementById("myTable");
 
-	for(let rowIndex =0; rowIndex < 2; rowIndex++)
+	for(let rowIndex =0; rowIndex < numberOfRows; rowIndex++)
 	{
        const newRow = createRow(rowIndex, numberOfColumns);
 		table.appendChild(newRow);
@@ -47,7 +47,7 @@ function createRow(rowIndex, numberOfColumns){
 
    for(let columnIndex = 0; columnIndex < numberOfColumns; columnIndex++)
 	   {
-          const newCell = document.createElement("tr");
+          const newCell = document.createElement("td");
 		  newCell.textContent = "Row-" +rowIndex + "Column-" + columnIndex;
 		  newRow.appendChild(newCell);
 	   }
