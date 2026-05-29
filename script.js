@@ -48,7 +48,7 @@ function createRow(rowIndex, numberOfColumns){
    for(let columnIndex = 0; columnIndex < numberOfColumns; columnIndex++)
 	   {
           const newCell = document.createElement("td");
-		  newCell.textContent = "Row-" +rowIndex + "Column-" + columnIndex;
+		  newCell.textContent = "Row-" + rowIndex + " Column-" + columnIndex;
 		  newRow.appendChild(newCell);
 	   }
 	return newRow;
